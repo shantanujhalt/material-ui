@@ -143,31 +143,34 @@ const theme = createMuiTheme({
 
 If you are using TypeScript, you would also need to use [module augmentation](/guides/typescript/#customization-of-theme) for the theme to accept the above values.
 
+<!-- tested with packages/material-ui/test/typescript/augmentation/paletteColors.spec.ts -->
+
 ```ts
-import * as React from 'react';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
+declare module '@material-ui/core/styles' {
+  interface Theme {
+    status: {
+      danger: React.CSSProperties['color'];
+    };
+  }
 
-function App() {
-  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+  interface Palette {
+    neutral: Palette['primary'];
+  }
+  interface PaletteOptions {
+    neutral: PaletteOptions['primary'];
+  }
 
-  const theme = React.useMemo(
-    () =>
-      createMuiTheme({
-        palette: {
-          type: prefersDarkMode ? 'dark' : 'light',
-        },
-      }),
-    [prefersDarkMode],
-  );
-
-  return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline/>
-      <Routes />
-    </ThemeProvider>
-  );
+  interface PaletteColor {
+    darker?: string;
+  }
+  interface SimplePaletteColorOptions {
+    darker?: string;
+  }
+  interface ThemeOptions {
+    status: {
+      danger: React.CSSProperties['color'];
+    };
+  }
 }
 ```
 
