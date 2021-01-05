@@ -322,14 +322,14 @@ export default function CustomBreakpoints() {
 如果你使用的是 TypeScript，那么将需要使用 [模块扩展（module augmentation）](/guides/typescript/#customization-of-theme) 来让主题接收上述值。
 
 ```ts
-declare module "@material-ui/core/styles/createBreakpoints" {
+declare module '@material-ui/core/styles' {
   interface BreakpointOverrides {
-    xs: false; // 移除 `xs` 断点
+    xs: false; // removes the `xs` breakpoint
     sm: false;
     md: false;
     lg: false;
     xl: false;
-    tablet: true; // 添加 `tablet` 断点
+    tablet: true; // adds the `tablet` breakpoint
     laptop: true;
     desktop: true;
   }
