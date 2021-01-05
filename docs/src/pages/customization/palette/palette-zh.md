@@ -143,13 +143,23 @@ const theme = createMuiTheme({
 
 如果您使用的是 TypeScript，您还需要使用 [module augmentation](/guides/typescript/#customization-of-theme) 来让主题接受上述值。
 
+<!-- tested with packages/material-ui/test/typescript/augmentation/paletteColors.spec.ts -->
+
 ```ts
-declare module '@material-ui/core/styles/createMuiTheme' {
+declare module '@material-ui/core/styles' {
   interface Theme {
     status: {
       danger: React.CSSProperties['color'];
     };
   }
+
+  interface Palette {
+    neutral: Palette['primary'];
+  }
+  interface PaletteOptions {
+    neutral: PaletteOptions['primary'];
+  }
+
   interface PaletteColor {
     darker?: string;
   }
@@ -160,15 +170,6 @@ declare module '@material-ui/core/styles/createMuiTheme' {
     status: {
       danger: React.CSSProperties['color'];
     };
-  }
-}
-
-declare module '@material-ui/core/styles/createPalette' {
-  interface Palette {
-    neutral: Palette['primary'];
-  }
-  interface PaletteOptions {
-    neutral: PaletteOptions['primary'];
   }
 }
 ```
