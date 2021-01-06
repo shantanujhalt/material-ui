@@ -66,6 +66,14 @@ materialDesign: https://material.io/archive/guidelines/components/steppers.html
 
 {{"demo": "pages/components/steppers/VerticalLinearStepper.js"}}
 
+### Perfomance
+
+The content of a step is unmounted when closed. If you need to make the content available to search engines or render expensive component trees inside your modal while optimizing for interaction responsiveness it might be a good idea to keep the step mounted with:
+
+```jsx
+<StepContent TransitionProps={{ unmountOnExit: false }} />
+```
+
 ## 移动设备上的步骤条
 
 该组件实现了适用于移动设备上的紧凑型步骤条。 与垂直步骤条相比，它的功能更为有限。 如果你还在寻找灵感，请参阅 [移动设备上的步骤条](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steps)。
