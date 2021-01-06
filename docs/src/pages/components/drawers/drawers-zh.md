@@ -96,7 +96,7 @@ If you are on a desktop, you can toggle the drawer with the "OPEN" button. If yo
 
 永久抽屉始终可见并固定在左侧，与内容或背景位于同一高度。 他们无法被关闭。
 
-推荐在**桌面环境上默认**使用永久抽屉。
+推荐在 **桌面环境上默认** 使用永久抽屉。
 
 ### 全高导航栏
 
