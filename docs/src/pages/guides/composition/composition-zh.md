@@ -73,15 +73,15 @@ function ListItemLink(props) {
 
 解决方案很简单： **避免内联函数，取而代之的是将一个静态组件传递给 `component` 属性**。 我们可以改变 `ListItemLink` 组件，这样一来 `CustomLink` 总是引用相同的组件：
 
-```jsx
-import { Link } from 'react-router-dom';
+```tsx
+import { Link, LinkProps } from 'react-router-dom';
 
 function ListItemLink(props) {
   const { icon, primary, to } = props;
 
   const CustomLink = React.useMemo(
     () =>
-      React.forwardRef((linkProps, ref) => (
+      React.forwardRef<any, Omit<LinkProps, 'to'>>((linkProps, ref) => (
         <Link ref={ref} to={to} {...linkProps} />
       )),
     [to],
