@@ -72,15 +72,15 @@ function ListItemLink(props) {
 
 A solução é simples: **evite funções em linha e passe um componente estático para a propriedade `component`**. Vamos mudar o componente `ListItemLink` para que `CustomLink` sempre referencie o mesmo componente:
 
-```jsx
-import { Link } from 'react-router-dom';
+```tsx
+import { Link, LinkProps } from 'react-router-dom';
 
 function ListItemLink(props) {
   const { icon, primary, to } = props;
 
   const CustomLink = React.useMemo(
     () =>
-      React.forwardRef((linkProps, ref) => (
+      React.forwardRef<any, Omit<LinkProps, 'to'>>((linkProps, ref) => (
         <Link ref={ref} to={to} {...linkProps} />
       )),
     [to],
