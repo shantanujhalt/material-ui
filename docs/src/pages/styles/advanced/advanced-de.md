@@ -271,7 +271,7 @@ Die Hook-Aufrufreihenfolge und die Klassennamensverkettungsreihenfolge **spielen
 
 ### insertionPoint
 
-### insertionPoint ### insertionPoint ### insertionPoint JSS \[bietet einen Mechanismus\](https://github.com/cssinjs/jss/blob/master/docs/setup.md#specify-the-dom-insertion-point) um diese Situation zu kontrollieren. Durch Hinzufügen der Platzierung des `Einfügepunkts` innerhalb Ihres HTML-Heads können Sie die \[Reihenfolge steuern\](https://cssinjs.org/jss-api#attach-style-sheets-in-a-specific-order), sodass die CSS-Regeln auf Ihre Komponenten angewendet werden.
+### insertionPoint ### insertionPoint ### insertionPoint ### insertionPoint JSS \[bietet einen Mechanismus\](https://github.com/cssinjs/jss/blob/master/docs/setup.md#specify-the-dom-insertion-point) um diese Situation zu kontrollieren. Durch Hinzufügen der Platzierung des `Einfügepunkts` innerhalb Ihres HTML-Heads können Sie die \[Reihenfolge steuern\](https://cssinjs.org/jss-api#attach-style-sheets-in-a-specific-order), sodass die CSS-Regeln auf Ihre Komponenten angewendet werden.
 
 #### HTML-Kommentar
 
@@ -283,18 +283,18 @@ Dann müssen Sie dieses Nonce an JSS übergeben, damit es den nachfolgenden <cod
 </code>
 
 ```jsx
+</code>
+
+```jsx
 import { create } from 'jss';
 import { StylesProvider, jssPreset } from '@material-ui/core/styles';
-import rtl from 'jss-rtl'
+
+const styleNode = document.createComment('jss-insertion-point');
+document.head.insertBefore(styleNode, document.head.firstChild);
 
 const jss = create({
-  plugins: [...jssPreset().plugins, rtl()],
-});
-
-export default function App() {
-  return (
-    <StylesProvider jss={jss}>
-      ...
+  ...jssPreset(),
+  // Define a custom insertion point that JSS will look for when injecting the styles into the DOM.
   insertionPoint: 'jss-insertion-point',
 });
 
