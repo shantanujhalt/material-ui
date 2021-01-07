@@ -66,7 +66,7 @@ Selecciona uno de los 248 países.
 
 El componente tiene dos estados que pueden ser controlados:
 
-1. el "valor" del estado con la combinación de props `value`/`onChange`. Este estado representa el valor seleccionado por el usuario, por ejemplo al pulsar <kbd>Enter</kbd>.
+1. el "valor" del estado con la combinación de props `value`/`onChange`. Este estado representa el valor seleccionado por el usuario, por ejemplo al pulsar <kbd class="key">Enter</kbd>.
 2. el estado "valor de entrada" con la combinación de props `inputValue`/`onInputChange`. Este estado representa el valor mostrado en el campo de texto.
 
 > ⚠️ Estos dos estados son aislados, deben ser controlados de forma independiente.
@@ -89,7 +89,7 @@ Si pretendes usar este modo para una experiencia similar a un [combo box](#combo
 
 - `selectOnFocus` que ayuda al usuario a borrar el valor seleccionado.
 - `clearOnBlur` que ayuda a que el usuario introduzca un nuevo valor.
-- `handleHomeEndKeys` para mover el foco dentro de la ventana emergente con las claves <kbd>Home</kbd> y <kbd>End</kbd>.
+- `handleHomeEndKeys` para mover el foco dentro de la ventana emergente con las claves <kbd class="key">Home</kbd> y <kbd class="key">End</kbd>.
 - Una última opción, por ejemplo `Agregar "SU BÚSQUEDA"`.
 
 {{"demo": "pages/components/autocomplete/FreeSoloCreateOption.js"}}
