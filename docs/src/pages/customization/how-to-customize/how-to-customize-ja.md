@@ -84,7 +84,7 @@ Sometimes, you can't use a **pseudo-class**, as the state doesn't exist in the w
 
 #### 1つのコンポーネント状態をオーバーライドするために、特異性を高める必要があるのはなぜですか。
 
-設計上、CSS仕様では疑似クラスを使用することで、特定性を高めています。 For consistency with native elements, Material-UI increases the specificity of its custom pseudo-classes. これには1つの重要な利点があり、カスタマイズしたい状態を簡単に選択できます。
+設計上、CSS仕様では疑似クラスを使用することで、特定性を高めています。 設計上、CSS仕様では疑似クラスを使用することで、特定性を高めています。 これには1つの重要な利点があり、カスタマイズしたい状態を簡単に選択できます。
 
 #### What custom pseudo-classes are available in Material-UI?
 
