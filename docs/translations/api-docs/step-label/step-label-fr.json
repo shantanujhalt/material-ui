@@ -10,7 +10,9 @@
     "StepIconProps": "Props applied to the <a href=\"/api/step-icon/\"><code>StepIcon</code></a> element."
   },
   "classDescriptions": {
-    "root": { "description": "Styles applied to the root element." },
+    "root": {
+      "description": "Styles applied to the root element."
+    },
     "horizontal": {
       "description": "Styles applied to the root element if {{conditions}}.",
       "conditions": "<code>orientation=\"horizontal\"</code>"
@@ -38,7 +40,9 @@
       "description": "Pseudo-class applied to the root element and `Typography` component if {{conditions}}.",
       "conditions": "<code>disabled={true}</code>"
     },
-    "iconContainer": { "description": "Styles applied to the `icon` container element." },
+    "iconContainer": {
+      "description": "Styles applied to the `icon` container element."
+    },
     "alternativeLabel": {
       "description": "Pseudo-class applied to the root and icon container and `Typography` if {{conditions}}.",
       "conditions": "<code>alternativeLabel={true}</code>"
