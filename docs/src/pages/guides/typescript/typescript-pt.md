@@ -216,21 +216,22 @@ Ao adicionar propriedades customizadas ao `Theme`, você pode continuar a utiliz
 O exemplo a seguir adiciona uma propriedade `appDrawer` que é mesclada na que foi exportada pelo `material-ui`:
 
 ```ts
-import { Breakpoint, Theme } from '@material-ui/core/styles';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import { Breakpoint } from '@material-ui/core/styles/createBreakpoints';
 
-declare module '@material-ui/core/styles' {
+declare module '@material-ui/core/styles/createMuiTheme' {
   interface Theme {
     appDrawer: {
-      width: React.CSSProperties['width'];
-      breakpoint: Breakpoint;
-    };
+      width: React.CSSProperties['width']
+      breakpoint: Breakpoint
+    }
   }
-  // allow configuration using `createMuiTheme`
+  // permitir configuração usando `createMuiTheme`
   interface ThemeOptions {
     appDrawer?: {
-      width?: React.CSSProperties['width'];
-      breakpoint?: Breakpoint;
-    };
+      width?: React.CSSProperties['width']
+      breakpoint?: Breakpoint
+    }
   }
 }
 ```
