@@ -8,7 +8,9 @@
     "variant": "The variant to use."
   },
   "classDescriptions": {
-    "root": { "description": "Styles applied to the root element." },
+    "root": {
+      "description": "Styles applied to the root element."
+    },
     "gutters": {
       "description": "Styles applied to the root element unless {{conditions}}.",
       "conditions": "<code>disableGutters={true}</code>"
