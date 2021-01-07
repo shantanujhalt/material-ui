@@ -13,7 +13,9 @@
     "variant": "The variant to use."
   },
   "classDescriptions": {
-    "root": { "description": "Styles applied to the root element." },
+    "root": {
+      "description": "Styles applied to the root element."
+    },
     "error": {
       "description": "Pseudo-class applied to the root element if {{conditions}}.",
       "conditions": "<code>error={true}</code>"
@@ -22,9 +24,9 @@
       "description": "Pseudo-class applied to the root element if {{conditions}}.",
       "conditions": "<code>disabled={true}</code>"
     },
-    "marginDense": {
+    "sizeSmall": {
       "description": "Styles applied to the root element if {{conditions}}.",
-      "conditions": "<code>margin=\"dense\"</code>"
+      "conditions": "<code>size=\"small\"</code>"
     },
     "contained": {
       "description": "Styles applied to the root element if {{conditions}}.",
