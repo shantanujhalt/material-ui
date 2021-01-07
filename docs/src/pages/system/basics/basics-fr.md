@@ -321,7 +321,7 @@ export default function CustomBreakpoints() {
 If you are using TypeScript, you will also need to use [module augmentation](/guides/typescript/#customization-of-theme) for the theme to accept the above values.
 
 ```ts
-declare module '@material-ui/core/styles' {
+declare module "@material-ui/core/styles/createBreakpoints" {
   interface BreakpointOverrides {
     xs: false; // removes the `xs` breakpoint
     sm: false;
