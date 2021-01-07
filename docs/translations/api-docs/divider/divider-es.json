@@ -12,7 +12,9 @@
     "variant": "The variant to use."
   },
   "classDescriptions": {
-    "root": { "description": "Styles applied to the root element." },
+    "root": {
+      "description": "Styles applied to the root element."
+    },
     "absolute": {
       "description": "Styles applied to the root element if {{conditions}}.",
       "conditions": "<code>absolute={true}</code>"
@@ -41,7 +43,9 @@
       "description": "Styles applied to the root element if {{conditions}}.",
       "conditions": "<code>flexItem={true}</code>"
     },
-    "withChildren": { "description": "Styles applied to the root element if divider have text." },
+    "withChildren": {
+      "description": "Styles applied to the root element if divider have text."
+    },
     "withChildrenVertical": {
       "description": "Styles applied to the root element if divider have text and `orientation=\"vertical\"`."
     },
