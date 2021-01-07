@@ -84,7 +84,7 @@ Sometimes, you can't use a **pseudo-class**, as the state doesn't exist in the w
 
 #### Warum muss ich die Spezifität erhöhen, um einen Komponentenzustand außer Kraft zu setzen?
 
-Die CSS-Spezifikation bewirkt, dass die Pseudoklassen die Spezifität erhöhen. For consistency with native elements, Material-UI increases the specificity of its custom pseudo-classes. This has one important advantage, it allows you to cherry-pick the state you want to customize.
+Die CSS-Spezifikation bewirkt, dass die Pseudoklassen die Spezifität erhöhen. Die CSS-Spezifikation bewirkt, dass die Pseudoklassen die Spezifität erhöhen. This has one important advantage, it allows you to cherry-pick the state you want to customize.
 
 #### What custom pseudo-classes are available in Material-UI?
 
@@ -185,6 +185,12 @@ const theme = createMuiTheme({
 });
 
 // ...
+return (
+  <ThemeProvider theme={theme}>
+    <CssBaseline />
+    {children}
+  </ThemeProvider>
+);
 return (
   <ThemeProvider theme={theme}>
     <CssBaseline />
