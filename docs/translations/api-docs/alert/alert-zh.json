@@ -14,7 +14,9 @@
     "variant": "The variant to use."
   },
   "classDescriptions": {
-    "root": { "description": "Styles applied to the root element." },
+    "root": {
+      "description": "Styles applied to the root element."
+    },
     "filled": {
       "description": "Styles applied to the root element if {{conditions}}.",
       "conditions": "<code>variant=\"filled\"</code>"
@@ -75,8 +77,12 @@
       "description": "Styles applied to the root element if {{conditions}}.",
       "conditions": "<code>variant=\"filled\"</code> and <code>color=\"error\"</code>"
     },
-    "icon": { "description": "Styles applied to the icon wrapper element." },
-    "message": { "description": "Styles applied to the message wrapper element." },
+    "icon": {
+      "description": "Styles applied to the icon wrapper element."
+    },
+    "message": {
+      "description": "Styles applied to the message wrapper element."
+    },
     "action": {
       "description": "Styles applied to the action wrapper element if {{conditions}}.",
       "conditions": "<code>action</code> is provided"
