@@ -215,7 +215,7 @@ These shorthands are **optional**, they are great to save time when writing styl
 
 ### Superset of CSS
 
-As part of the prop, you can use any regular CSS too: child or pseudo-selectors, media queries, raw CSS values, etc. Here are a few examples:
+As part of the prop, you can use any regular CSS too: child or pseudo-selectors, media queries, raw CSS values, etc. Here are a few examples: Here are a few examples:
 
 - Using pseudo selectors:
 
@@ -321,7 +321,7 @@ export default function CustomBreakpoints() {
 If you are using TypeScript, you will also need to use [module augmentation](/guides/typescript/#customization-of-theme) for the theme to accept the above values.
 
 ```ts
-declare module '@material-ui/core/styles' {
+declare module "@material-ui/core/styles/createBreakpoints" {
   interface BreakpointOverrides {
     xs: false; // removes the `xs` breakpoint
     sm: false;
