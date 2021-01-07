@@ -231,21 +231,22 @@ const DecoratedClass = withStyles(styles)(
 以下示例添加了一个 `appDrawer` 属性，并将其合并到由 `material-ui` 提供的属性中：
 
 ```ts
-import { Breakpoint, Theme } from '@material-ui/core/styles';
+import { Theme } from '@material-ui/core/styles/createMuiTheme';
+import { Breakpoint } from '@material-ui/core/styles/createBreakpoints';
 
-declare module '@material-ui/core/styles' {
+declare module '@material-ui/core/styles/createMuiTheme' {
   interface Theme {
     appDrawer: {
-      width: React.CSSProperties['width'];
-      breakpoint: Breakpoint;
-    };
+      width: React.CSSProperties['width']
+      breakpoint: Breakpoint
+    }
   }
-  // allow configuration using `createMuiTheme`
+  // 使用 `createMuiTheme` 来配置
   interface ThemeOptions {
     appDrawer?: {
-      width?: React.CSSProperties['width'];
-      breakpoint?: Breakpoint;
-    };
+      width?: React.CSSProperties['width']
+      breakpoint?: Breakpoint
+    }
   }
 }
 ```
