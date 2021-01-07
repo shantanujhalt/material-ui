@@ -45,6 +45,10 @@ const theme = createMuiTheme({
     },
   },
 });
+      Infinity,
++     }),
+    ]
+  }
 ```
 
 {{"demo": "pages/customization/theme-components/DefaultProps.js"}}
@@ -86,7 +90,7 @@ If you're using TypeScript, you'll need to specify your new variants/colors, usi
 <!-- Tested with packages/material-ui/test/typescript/augmentation/themeComponents.spec.ts -->
 
 ```tsx
-declare module '@material-ui/core/Button' {
+declare module '@material-ui/core/Button/Button' {
   interface ButtonPropsVariantOverrides {
     dashed: true;
   }
