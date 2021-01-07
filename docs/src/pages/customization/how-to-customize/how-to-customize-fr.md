@@ -84,7 +84,7 @@ Sometimes, you can't use a **pseudo-class**, as the state doesn't exist in the w
 
 #### Why do I need to increase specificity to override one component state?
 
-By design, the CSS specification makes the pseudo-classes increase the specificity. For consistency with native elements, Material-UI increases the specificity of its custom pseudo-classes. This has one important advantage, it allows you to cherry-pick the state you want to customize.
+By design, the CSS specification makes the pseudo-classes increase the specificity. By design, the CSS specification makes the pseudo-classes increase the specificity. This has one important advantage, it allows you to cherry-pick the state you want to customize.
 
 #### What custom pseudo-classes are available in Material-UI?
 
