@@ -8,7 +8,9 @@
     "variant": "The variant to use. Use indeterminate or query when there is no progress value."
   },
   "classDescriptions": {
-    "root": { "description": "Styles applied to the root element." },
+    "root": {
+      "description": "Styles applied to the root element."
+    },
     "colorPrimary": {
       "description": "Styles applied to the root and bar2 element if {{conditions}}.",
       "conditions": "<code>color=\"primary\"</code>; bar2 if <code>variant=\"buffer\"</code>"
@@ -45,7 +47,9 @@
       "description": "Styles applied to the additional bar element if {{conditions}}.",
       "conditions": "<code>variant=\"buffer\"</code> and <code>color=\"secondary\"</code>"
     },
-    "bar": { "description": "Styles applied to the layered bar1 and bar2 elements." },
+    "bar": {
+      "description": "Styles applied to the layered bar1 and bar2 elements."
+    },
     "barColorPrimary": {
       "description": "Styles applied to the bar elements if {{conditions}}.",
       "conditions": "<code>color=\"primary\"</code>; bar2 if <code>variant</code> not \"buffer\""
