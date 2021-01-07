@@ -9,7 +9,9 @@
     "fontSize": "The fontSize applied to the icon. Defaults to 24px, but can be configure to inherit font size."
   },
   "classDescriptions": {
-    "root": { "description": "Styles applied to the root element." },
+    "root": {
+      "description": "Styles applied to the root element."
+    },
     "colorPrimary": {
       "description": "Styles applied to the root element if {{conditions}}.",
       "conditions": "<code>color=\"primary\"</code>"
