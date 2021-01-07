@@ -10,7 +10,9 @@
     "variant": "The variant to use. Use indeterminate when there is no progress value."
   },
   "classDescriptions": {
-    "root": { "description": "Styles applied to the root element." },
+    "root": {
+      "description": "Styles applied to the root element."
+    },
     "determinate": {
       "description": "Styles applied to the root element if {{conditions}}.",
       "conditions": "<code>variant=\"determinate\"</code>"
@@ -27,8 +29,12 @@
       "description": "Styles applied to the root element if {{conditions}}.",
       "conditions": "<code>color=\"secondary\"</code>"
     },
-    "svg": { "description": "Styles applied to the `svg` element." },
-    "circle": { "description": "Styles applied to the `circle` svg path." },
+    "svg": {
+      "description": "Styles applied to the `svg` element."
+    },
+    "circle": {
+      "description": "Styles applied to the `circle` svg path."
+    },
     "circleDeterminate": {
       "description": "Styles applied to the `circle` svg path if {{conditions}}.",
       "conditions": "<code>variant=\"determinate\"</code>"
