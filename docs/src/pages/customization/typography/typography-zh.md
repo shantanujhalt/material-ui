@@ -208,7 +208,7 @@ const theme = createMuiTheme({
 
 In addition to using the default typography variants, you can add custom ones, or disable any you don't need. Here is what you need to do:
 
-**Step 1. Update the theme's typography object**
+**Step 1. Step 1. Update the theme's typography object**
 
 ```js
 const theme = createMuiTheme({
@@ -222,7 +222,7 @@ const theme = createMuiTheme({
 });
 ```
 
-**Step 2. Update the necessary typings (if you are using TypeScript)**
+**Step 2. Step 2. Update the necessary typings (if you are using TypeScript)**
 
 > If you aren't using TypeScript you should skip this step.
 
@@ -231,19 +231,19 @@ You need to make sure that the typings for the theme's `typography` variants and
 <!-- Tested with packages/material-ui/test/typescript/augmentation/typographyVariants.spec.ts -->
 
 ```ts
-declare module '@material-ui/core/styles' {
-  interface TypographyVariants {
+declare module '@material-ui/core/styles/createTypography' {
+  interface Typography {
     poster: React.CSSProperties;
   }
 
   // allow configuration using `createMuiTheme`
-  interface TypographyVariantsOptions {
+  interface TypographyOptions {
     poster?: React.CSSProperties;
   }
 }
 
 // Update the Typography's variant prop options
-declare module '@material-ui/core/Typography' {
+declare module '@material-ui/core/Typography/Typography' {
   interface TypographyPropsVariantOverrides {
     poster: true;
     h3: false;
@@ -251,7 +251,7 @@ declare module '@material-ui/core/Typography' {
 }
 ```
 
-**Step 3. You can now use the new variant**
+**Step 3. Step 3. You can now use the new variant**
 
 {{"demo": "pages/customization/typography/TypographyCustomVariant.js", "hideToolbar": true}}
 
