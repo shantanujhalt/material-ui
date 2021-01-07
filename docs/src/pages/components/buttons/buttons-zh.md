@@ -43,7 +43,7 @@ waiAria: 'https://www.w3.org/TR/wai-aria-practices/#button'
 
 ## Outlined Buttons 描边按钮
 
-[描边按钮](https://material.io/components/buttons#outlined-button) 表示中等程度的强调。 该按钮包含重要的操作，但不应该成为应用程序中的主要操作。
+[描边按钮](https://material.io/components/buttons#outlined-button) 表示中等程度的强调。 它们用于触发应用程序所具有的主要功能。
 
 你也可以将描边按钮作为比实心按钮次要一点的替代方案，或者用来作为比文本按钮重要一点的展示。
 
