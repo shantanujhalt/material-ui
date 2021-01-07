@@ -18,7 +18,7 @@
     "leaveTouchDelay": "The number of milliseconds after the user stops touching an element before hiding the tooltip.",
     "onClose": "Callback fired when the component requests to be closed.<br><br><strong>Signature:</strong><br><code>function(event: object) =&gt; void</code><br><em>event:</em> The event source of the callback.",
     "onOpen": "Callback fired when the component requests to be open.<br><br><strong>Signature:</strong><br><code>function(event: object) =&gt; void</code><br><em>event:</em> The event source of the callback.",
-    "open": "If <code>true</code>, the tooltip is shown.",
+    "open": "Control the popup` open state.",
     "placement": "Tooltip placement.",
     "PopperComponent": "The component used for the popper.",
     "PopperProps": "Props applied to the <a href=\"/api/popper/\"><code>Popper</code></a> element.",
@@ -27,7 +27,9 @@
     "TransitionProps": "Props applied to the transition element. By default, the element is based on this <a href=\"http://reactcommunity.org/react-transition-group/transition\"><code>Transition</code></a> component."
   },
   "classDescriptions": {
-    "popper": { "description": "Styles applied to the Popper component." },
+    "popper": {
+      "description": "Styles applied to the Popper component."
+    },
     "popperInteractive": {
       "description": "Styles applied to the Popper component unless {{conditions}}.",
       "conditions": "<code>disableInteractive={true}</code>"
@@ -36,12 +38,16 @@
       "description": "Styles applied to the Popper component if {{conditions}}.",
       "conditions": "<code>arrow={true}</code>"
     },
-    "tooltip": { "description": "Styles applied to the tooltip (label wrapper) element." },
+    "tooltip": {
+      "description": "Styles applied to the tooltip (label wrapper) element."
+    },
     "tooltipArrow": {
       "description": "Styles applied to the tooltip (label wrapper) element if {{conditions}}.",
       "conditions": "<code>arrow={true}</code>"
     },
-    "arrow": { "description": "Styles applied to the arrow element." },
+    "arrow": {
+      "description": "Styles applied to the arrow element."
+    },
     "touch": {
       "description": "Styles applied to the tooltip (label wrapper) element if the tooltip is opened by touch."
     },
