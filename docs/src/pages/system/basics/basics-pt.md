@@ -172,7 +172,7 @@ Contras:
 
   | Benchmark                             | Fragmento de código         | Tempo normalizado |
   |:------------------------------------- |:--------------------------- | ----------------- |
-  | a. Renderizar 1.000 primitivos        | `<div className="…">` | 100ms             |
+  | a. Renderizar 1.000 Box               | `<div className="…">` | 100ms             |
   | b. Renderizar 1.000 componentes       | `<Div>`               | 120ms             |
   | c. Renderizar 1,000 styled components | `<StyledDiv>`         | 160ms             |
   | d. Renderizar 1.000 Box               | `<Box sx={…}>`        | 370ms             |
@@ -215,7 +215,7 @@ Estas abreviações são **opcionais**, elas são ótimas para economizar tempo 
 
 ### Super conjunto de CSS
 
-Como parte da propriedade, você pode usar qualquer CSS normalmente: seletores filhos ou pseudo seletores, consultas de mídia, valores CSS brutos, etc. Aqui esta alguns exemplos:
+Como parte da propriedade, você pode usar qualquer CSS normalmente: seletores filhos ou pseudo seletores, consultas de mídia, valores CSS brutos, etc. Aqui esta alguns exemplos: Aqui esta alguns exemplos:
 
 - Usando pseudo seletores:
 
@@ -321,7 +321,7 @@ export default function CustomBreakpoints() {
 Se você estiver usando TypeScript, você também deverá usar a [extensão de módulos](/guides/typescript/#customization-of-theme) para que o tema aceite os valores acima.
 
 ```ts
-declare module '@material-ui/core/styles' {
+declare module "@material-ui/core/styles/createBreakpoints" {
   interface BreakpointOverrides {
     xs: false; // removes the `xs` breakpoint
     sm: false;
