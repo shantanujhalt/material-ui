@@ -34,7 +34,7 @@ Vamos voltar para a demonstração acima. How can you override the slider's thum
 
 In this example, the styles are applied with `.css-ae2u5c-MuiSlider-thumb` so the name of the component is `Slider` and the name of the slot is `thumb`.
 
-You now know that you need to target the `.MuiSlider-thumb` class name for overriding the look of the thumb:
+You now know that you need to target the `. MuiSlider-thumb` class name for overriding the look of the thumb:
 
 {{"demo": "pages/customization/how-to-customize/DevTools.js"}}
 
@@ -51,12 +51,12 @@ Os estados especiais dos componentes, como *hover*, *focus*, *disabled* e *selec
 Para sobrescrever os estados especiais dos componentes, **você precisa aumentar a especificidade**. Aqui está um exemplo com o estado *disable* e o componente botão está usando uma **pseudo-class** (`:disabled`):
 
 ```css
-.Button {
+Button {
   color: black;
 }
 
 /* Increase the specificity */
-.Button:disabled {
+. Button:disabled {
   color: white;
 }
 ```
@@ -65,15 +65,15 @@ Para sobrescrever os estados especiais dos componentes, **você precisa aumentar
 <Button disabled className="Button">
 ```
 
-Sometimes, you can't use a **pseudo-class**, as the state doesn't exist in the web specification. Vamos pegar o componente menu item e o estado *selected* como exemplo. You can use the `.Mui-selected` global class name to customize the special state of the `MenuItem` component:
+Sometimes, you can't use a **pseudo-class**, as the state doesn't exist in the web specification. Vamos pegar o componente menu item e o estado *selected* como exemplo. You can use the `. Mui-selected` global class name to customize the special state of the `MenuItem` component:
 
 ```css
-.MenuItem {
+. MenuItem {
   color: black;
 }
 
 /* Increase the specificity */
-.MenuItem.Mui-selected {
+. MenuItem. Mui-selected {
   color: blue;
 }
 ```
@@ -84,7 +84,7 @@ Sometimes, you can't use a **pseudo-class**, as the state doesn't exist in the w
 
 #### Por que preciso aumentar a especificidade para sobrescrever um estado do componente?
 
-Por padrão, a especificação CSS faz com que as pseudo-classes aumentem a especificidade. For consistency with native elements, Material-UI increases the specificity of its custom pseudo-classes. Isso tem uma vantagem importante, permitir que você escolha o estado que deseja customizar.
+Por padrão, a especificação CSS faz com que as pseudo-classes aumentem a especificidade. Por padrão, a especificação CSS faz com que as pseudo-classes aumentem a especificidade. Isso tem uma vantagem importante, permitir que você escolha o estado que deseja customizar.
 
 #### What custom pseudo-classes are available in Material-UI?
 
@@ -93,25 +93,25 @@ You can rely on the following [global class names](/styles/advanced/#with-materi
 | State         | Nome da classe global |
 |:------------- |:--------------------- |
 | active        | `.Mui-active`         |
-| checked       | `.Mui-checked`        |
-| disabled      | `.Mui-disabled`       |
-| error         | `.Mui-error`          |
-| focused       | `.Mui-focused`        |
-| focus visible | `.Mui-focusVisible`   |
-| required      | `.Mui-required`       |
-| expanded      | `.Mui-expanded`       |
-| selected      | `.Mui-selected`       |
+| checked       | `. Mui-checked`       |
+| disabled      | `. Mui-disabled`      |
+| error         | `. Mui-error`         |
+| focused       | `. Mui-focused`       |
+| focus visible | `. Mui-focusVisible`  |
+| required      | `. Mui-required`      |
+| expanded      | `. Mui-expanded`      |
+| selected      | `. Mui-selected`      |
 
 > ⚠️ Never style these pseudo-class class names directly:
 
 ```css
 /* ❌ NOT OK, impact all the components with unclear side-effects */
-.Mui-error {
+. Mui-error {
   color: red;
 }
 
 /* ✅ OK */
-.MuiOutinedInput-root.Mui-error {
+. MuiOutinedInput-root. Mui-error {
   color: red;
 }
 ```
@@ -166,7 +166,8 @@ const GlobalCss = withStyles({
 
 // …
 
-<GlobalCss />;
+const GlobalCss = withStyles({
+  // @global é manipulado pelo jss-plugin-global.
 ```
 
 Se você estiver usando o componente [CssBaseline](/components/css-baseline/) para aplicar o reset global, ele pode também ser usado para aplicação de estilos globais. Por exemplo:
