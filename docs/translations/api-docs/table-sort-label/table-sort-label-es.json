@@ -9,12 +9,16 @@
     "IconComponent": "Sort icon to use."
   },
   "classDescriptions": {
-    "root": { "description": "Styles applied to the root element." },
+    "root": {
+      "description": "Styles applied to the root element."
+    },
     "active": {
       "description": "Pseudo-class applied to the root element if {{conditions}}.",
       "conditions": "<code>active={true}</code>"
     },
-    "icon": { "description": "Styles applied to the icon component." },
+    "icon": {
+      "description": "Styles applied to the icon component."
+    },
     "iconDirectionDesc": {
       "description": "Styles applied to the icon component if {{conditions}}.",
       "conditions": "<code>direction=\"desc\"</code>"
