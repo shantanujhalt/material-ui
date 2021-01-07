@@ -10,7 +10,9 @@
     "inset": "If <code>true</code>, the List Subheader is indented."
   },
   "classDescriptions": {
-    "root": { "description": "Styles applied to the root element." },
+    "root": {
+      "description": "Styles applied to the root element."
+    },
     "colorPrimary": {
       "description": "Styles applied to the root element if {{conditions}}.",
       "conditions": "<code>color=\"primary\"</code>"
