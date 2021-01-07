@@ -218,19 +218,19 @@ You need to make sure that the typings for the theme's `typography` variants and
 <!-- Tested with packages/material-ui/test/typescript/augmentation/typographyVariants.spec.ts -->
 
 ```ts
-declare module '@material-ui/core/styles' {
-  interface TypographyVariants {
-    poster: React.CSSProperties;
+declare module '@material-ui/core/styles/createTypography' {
+  interface Typography {
+    poster: React. CSSProperties;
   }
 
   // allow configuration using `createMuiTheme`
-  interface TypographyVariantsOptions {
-    poster?: React.CSSProperties;
+  interface TypographyOptions {
+    poster?: React. CSSProperties;
   }
 }
 
 // Update the Typography's variant prop options
-declare module '@material-ui/core/Typography' {
+declare module '@material-ui/core/Typography/Typography' {
   interface TypographyPropsVariantOverrides {
     poster: true;
     h3: false;
