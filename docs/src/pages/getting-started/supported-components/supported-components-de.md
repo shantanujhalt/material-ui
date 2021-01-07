@@ -46,7 +46,7 @@ Wenn Sie Unterstützung für eine Komponente oder ein Feature hinzufügen möcht
   - **[Inset](https://material.io/design/components/dividers.html#types) ✓**
 - **[Listas de Imagem](https://material.io/design/components/image-lists.html) ✓** (também conhecido como Grade Lista)
 - **[Dropdown menu](https://material.io/design/components/menus.html#dropdown-menu) ✓** (Can be composed)
-- **[Menus](https://material.io/design/components/menus.html) ✓** 
+- **<strong x-id="1"><a href="https://material.io/design/components/image-lists.html">Listas de Imagem</a> ✓</strong> (também conhecido como Grade Lista)****** 
   - [Types:](https://material.io/design/components/lists.html#types) 
     - **Single line ✓**
     - **Two line ✓**
@@ -86,7 +86,7 @@ Wenn Sie Unterstützung für eine Komponente oder ein Feature hinzufügen möcht
   - **[Fixed tabs](https://material.io/design/components/tabs.html#fixed-tabs) ✓**
   - **[Scrollable tabs](https://material.io/design/components/tabs.html#scrollable-tabs) ✓**
   - **[Mobile steps](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steps) ✓**
-- **[Text fields](https://material.io/design/components/text-fields.html) ✓** 
+- ****** [ Toolbars](https://material.io/archive/guidelines/components/toolbars.html) ✓<strong x-id="1">(Veraltetes Material v1)</strong>** 
   - **[Tooltips](https://material.io/design/components/tooltips.html) ✓**
   - **[Filled](https://material.io/design/components/text-fields.html#filled-text-field) ✓**
 - **[Outline](https://material.io/design/components/text-fields.html#outlined-text-field) ✓** 
