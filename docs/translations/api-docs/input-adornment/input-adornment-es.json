@@ -10,7 +10,9 @@
     "variant": "The variant to use. Note: If you are using the <code>TextField</code> component or the <code>FormControl</code> component you do not have to set this manually."
   },
   "classDescriptions": {
-    "root": { "description": "Styles applied to the root element." },
+    "root": {
+      "description": "Styles applied to the root element."
+    },
     "filled": {
       "description": "Styles applied to the root element if {{conditions}}.",
       "conditions": "<code>variant=\"filled\"</code>"
@@ -30,8 +32,8 @@
     "hiddenLabel": {
       "description": "Styles applied if the adornment is used inside <FormControl hiddenLabel />."
     },
-    "marginDense": {
-      "description": "Styles applied if the adornment is used inside <FormControl margin=\"dense\" />."
+    "sizeSmall": {
+      "description": "Styles applied if the adornment is used inside <FormControl size=\"small\" />."
     }
   }
 }
