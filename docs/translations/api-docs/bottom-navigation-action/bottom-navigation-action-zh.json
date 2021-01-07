@@ -9,8 +9,12 @@
     "value": "You can provide your own value. Otherwise, we fallback to the child position index."
   },
   "classDescriptions": {
-    "root": { "description": "Styles applied to the root element." },
-    "selected": { "description": "Pseudo-class applied to the root element if selected." },
+    "root": {
+      "description": "Styles applied to the root element."
+    },
+    "selected": {
+      "description": "Pseudo-class applied to the root element if selected."
+    },
     "iconOnly": {
       "description": "Pseudo-class applied to the root element if {{conditions}}.",
       "conditions": "<code>showLabel={false}</code> and not selected"
@@ -18,6 +22,8 @@
     "wrapper": {
       "description": "Styles applied to the span element that wraps the icon and label."
     },
-    "label": { "description": "Styles applied to the label's span element." }
+    "label": {
+      "description": "Styles applied to the label's span element."
+    }
   }
 }
