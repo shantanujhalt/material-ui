@@ -44,8 +44,8 @@ If you wish to add support for a component or feature not highlighted here, plea
   - **[Inset](https://material.io/design/components/dividers.html#types) ✓**
   - **[Inset](https://material.io/design/components/dividers.html#types) ✓**
   - **[Inset](https://material.io/design/components/dividers.html#types) ✓**
-- **[Image lists](https://material.io/design/components/image-lists.html) ✓** (AKA Grid Lists)****
-- **[Menus](https://material.io/design/components/menus.html) ✓**
+- **[Image lists](https://material.io/design/components/image-lists.html) ✓** (AKA Grid Lists)********
+- ****[Image lists](https://material.io/design/components/image-lists.html) ✓** (AKA Grid Lists)******
   - [Types:](https://material.io/design/components/lists.html#types)
     - **Single line ✓**
     - **Two line ✓**
