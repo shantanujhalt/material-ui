@@ -138,7 +138,7 @@ There's no need to constantly jump between the usage of the styled components an
 
 **2. Naming things is hard.**
 
-Have you ever found yourself struggling to find a good name for a styled component? The system maps the styles directly to the element. All you have to do is worry about actual style properties.
+Have you ever found yourself struggling to find a good name for a styled component? The system maps the styles directly to the element. The system maps the styles directly to the element. All you have to do is worry about actual style properties.
 
 **3. Enforcing consistency in UIs is hard.**
 
@@ -321,7 +321,7 @@ export default function CustomBreakpoints() {
 If you are using TypeScript, you will also need to use [module augmentation](/guides/typescript/#customization-of-theme) for the theme to accept the above values.
 
 ```ts
-declare module '@material-ui/core/styles' {
+declare module "@material-ui/core/styles/createBreakpoints" {
   interface BreakpointOverrides {
     xs: false; // removes the `xs` breakpoint
     sm: false;
