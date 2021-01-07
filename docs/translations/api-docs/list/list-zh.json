@@ -9,12 +9,16 @@
     "subheader": "The content of the subheader, normally <code>ListSubheader</code>."
   },
   "classDescriptions": {
-    "root": { "description": "Styles applied to the root element." },
+    "root": {
+      "description": "Styles applied to the root element."
+    },
     "padding": {
       "description": "Styles applied to the root element unless {{conditions}}.",
       "conditions": "<code>disablePadding={true}</code>"
     },
-    "dense": { "description": "Styles applied to the root element if dense." },
+    "dense": {
+      "description": "Styles applied to the root element if dense."
+    },
     "subheader": {
       "description": "Styles applied to the root element if a `subheader` is provided."
     }
