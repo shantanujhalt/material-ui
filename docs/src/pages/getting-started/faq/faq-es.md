@@ -54,10 +54,10 @@ module.exports = {
 +     new webpack.optimize.CommonsChunkPlugin({
 +       name: "vendor",
 +       minChunks:
-      },
-    },
-  },
-});
+      Infinity,
++     }),
+    ]
+  }
 ```
 
 ## ¿Cómo puedo desactivar las transiciones globalmente?
