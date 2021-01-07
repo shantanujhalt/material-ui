@@ -20,7 +20,9 @@
     "zeroMinWidth": "If <code>true</code>, it sets <code>min-width: 0</code> on the item. Refer to the limitations section of the documentation to better understand the use case."
   },
   "classDescriptions": {
-    "root": { "description": "Styles applied to the root element." },
+    "root": {
+      "description": "Styles applied to the root element."
+    },
     "container": {
       "description": "Styles applied to the root element if {{conditions}}.",
       "conditions": "<code>container={true}</code>"
