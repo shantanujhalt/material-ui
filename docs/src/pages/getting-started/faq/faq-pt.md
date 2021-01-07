@@ -275,7 +275,7 @@ O valor de nomes de classe depende da lógica empregada pelo [gerador de nome de
 
   ```diff
   - // Crie um novo gerador de nome de classe.
-  - // Crie um novo gerador de nome de classe.
+  -// Crie uma instância de sheets.
   -const generateClassName = createGenerateClassName();
 
 function handleRender(req, res) {
