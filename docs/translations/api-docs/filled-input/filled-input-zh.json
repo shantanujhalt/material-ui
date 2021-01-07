@@ -5,7 +5,7 @@
     "autoFocus": "If <code>true</code>, the <code>input</code> element is focused during the first mount.",
     "classes": "Override or extend the styles applied to the component. See <a href=\"#css\">CSS API</a> below for more details.",
     "color": "The color of the component. It supports those theme colors that make sense for this component. The prop defaults to the value (<code>&#39;primary&#39;</code>) inherited from the parent FormControl component.",
-    "defaultValue": "The default <code>input</code> element value. Use when the component is not controlled.",
+    "defaultValue": "The default input value. Use when the component is not controlled.",
     "disabled": "If <code>true</code>, the <code>input</code> element is disabled. The prop defaults to the value (<code>false</code>) inherited from the parent FormControl component.",
     "disableUnderline": "If <code>true</code>, the input will not have an underline.",
     "endAdornment": "End <code>InputAdornment</code> for this component.",
@@ -30,8 +30,12 @@
     "value": "The value of the <code>input</code> element, required for a controlled component."
   },
   "classDescriptions": {
-    "root": { "description": "Styles applied to the root element." },
-    "colorSecondary": { "description": "Styles applied to the root element if color secondary." },
+    "root": {
+      "description": "Styles applied to the root element."
+    },
+    "colorSecondary": {
+      "description": "Styles applied to the root element if color secondary."
+    },
     "underline": {
       "description": "Styles applied to the root element unless {{conditions}}.",
       "conditions": "<code>disableUnderline={true}</code>"
@@ -55,9 +59,9 @@
       "description": "Pseudo-class applied to the root element if {{conditions}}.",
       "conditions": "<code>error={true}</code>"
     },
-    "marginDense": {
+    "sizeSmall": {
       "description": "Styles applied to the `input` element if {{conditions}}.",
-      "conditions": "<code>margin=\"dense\"</code>"
+      "conditions": "<code>size=\"small\"</code>"
     },
     "multiline": {
       "description": "Styles applied to the root element if {{conditions}}.",
@@ -67,10 +71,12 @@
       "description": "Styles applied to the root element if {{conditions}}.",
       "conditions": "<code>hiddenLabel={true}</code>"
     },
-    "input": { "description": "Styles applied to the `input` element." },
-    "inputMarginDense": {
+    "input": {
+      "description": "Styles applied to the `input` element."
+    },
+    "inputSizeSmall": {
       "description": "Styles applied to the `input` element if {{conditions}}.",
-      "conditions": "<code>margin=\"dense\"</code>"
+      "conditions": "<code>size=\"small\"</code>"
     },
     "inputHiddenLabel": {
       "description": "Styles applied to the `input` if in `<FormControl hiddenLabel />`."
