@@ -65,8 +65,9 @@ Typographyコンポーネントは、 `variantMapping` プロパティを使用�
 ```jsx
 {/* There is already an h1 in the page, let's not duplicate it. */}
 <Typography variant="h1" component="h2">
-  h1. Heading
-</Typography>
+  h1. */}
+<Typography variant="h1" component="h2">
+  h1.
 ```
 
 - 以下のようにテーマ使用して、[マッピング をグローバルに](/customization/theme-components/#default-props)変更できます。
