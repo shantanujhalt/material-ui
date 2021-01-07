@@ -12,7 +12,9 @@
     "required": "If <code>true</code>, the label will indicate that the <code>input</code> is required."
   },
   "classDescriptions": {
-    "root": { "description": "Styles applied to the root element." },
+    "root": {
+      "description": "Styles applied to the root element."
+    },
     "colorSecondary": {
       "description": "Styles applied to the root element if the color is secondary."
     },
@@ -36,6 +38,8 @@
       "description": "Pseudo-class applied to the root element if {{conditions}}.",
       "conditions": "<code>required={true}</code>"
     },
-    "asterisk": { "description": "Styles applied to the asterisk element." }
+    "asterisk": {
+      "description": "Styles applied to the asterisk element."
+    }
   }
 }
