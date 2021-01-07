@@ -43,15 +43,15 @@ const iOS =
 <SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} />;
 ```
 
-### Swipeable edge
+### Manter montado
 
-You can configure the `SwipeableDrawer` to have a visible edge when closed.
+Para garantir que um drawer temporário não seja desmontado, especifique a propriedade `ModalProps` como:
 
 If you are on a desktop, you can toggle the drawer with the "OPEN" button. If you are on mobile, you can open the demo in CodeSandbox ("edit" icon) and swipe.
 
 {{"demo": "pages/components/drawers/SwipeableEdgeDrawer.js", "iframe": true, "height": 400, "maxWidth": 300}}
 
-### Manter montado
+### Navegação em altura total
 
 Para garantir que um drawer temporário não seja desmontado, especifique a propriedade `ModalProps` como:
 
