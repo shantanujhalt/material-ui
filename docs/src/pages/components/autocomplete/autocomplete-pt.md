@@ -66,7 +66,7 @@ Escolha um dos 248 países.
 
 O componente tem dois estados que podem ser controlados:
 
-1. o estado "value" com a combinação das propriedades `value`/`onChange`. Esse estado representa o valor selecionado pelo usuário, por exemplo, quando é pressionado a tecla <kbd>Enter</kbd>.
+1. o estado "value" com a combinação das propriedades `value`/`onChange`. Esse estado representa o valor selecionado pelo usuário, por exemplo, quando é pressionado a tecla <kbd class="key">Enter</kbd>.
 2. o estado "input value" com a combinação das propriedades `inputValue`/`onInputChange`. Esse estado representa o valor exibido na caixa de texto.
 
 > ⚠️ Esses dois estados estão isolados, eles podem ser controlados de forma independente.
@@ -89,7 +89,7 @@ Se você pretende usar este modo para uma [caixa de combinação](#combo-box), p
 
 - `selectOnFocus` para ajudar o usuário a limpar o valor selecionado.
 - `clearOnBlur` para ajudar o usuário a digitar um novo valor.
-- `handleHomeEndKeys` para mover o foco dentro do popup com as teclas <kbd>Home</kbd> e <kbd>End</kbd>.
+- `handleHomeEndKeys` para mover o foco dentro do popup com as teclas <kbd class="key">Home</kbd> e <kbd class="key">End</kbd>.
 - Adicione uma última opção para indicar a possibilidade de adição, por exemplo `Adicionar "SUA PESQUISA"`.
 
 {{"demo": "pages/components/autocomplete/FreeSoloCreateOption.js"}}
