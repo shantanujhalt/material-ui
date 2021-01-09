@@ -20,7 +20,7 @@ waiAria: 'https://www.w3.org/TR/wai-aria-practices/#button'
 
 {{"component": "modules/components/ComponentLinkHeader.js"}}
 
-## Contained buttons
+## 实心按钮
 
 [实心按钮](https://material.io/design/components/buttons.html#contained-button) 表示高度的强调，你根据它们的立体效果和填充颜色来区分彼此。 它们用于触发应用程序所具有的主要功能。
 
@@ -30,7 +30,7 @@ waiAria: 'https://www.w3.org/TR/wai-aria-practices/#button'
 
 {{"demo": "pages/components/buttons/DisableElevation.js"}}
 
-## Text buttons
+## 文本按钮
 
 [文本按钮](https://material.io/components/buttons#text-button) 通常用于不太明显的操作，包括那些位于：
 
@@ -41,9 +41,9 @@ waiAria: 'https://www.w3.org/TR/wai-aria-practices/#button'
 
 {{"demo": "pages/components/buttons/TextButtons.js"}}
 
-## Outlined buttons
+## 描边按钮
 
-[描边按钮](https://material.io/components/buttons#outlined-button) 表示中等程度的强调。 它们用于触发应用程序所具有的主要功能。
+[描边按钮](https://material.io/components/buttons#outlined-button) 表示中等程度的强调。 该按钮包含重要的操作，但不应该成为应用程序中的主要操作。
 
 你也可以将描边按钮作为比实心按钮次要一点的替代方案，或者用来作为比文本按钮重要一点的展示。
 
@@ -81,7 +81,7 @@ Sometimes you might want to have icons for certain buttons to enhance the UX of 
 
 {{"demo": "pages/components/buttons/IconLabelButtons.js"}}
 
-## Icon button
+## 图标按钮
 
 图标按钮通常位于应用栏和工具栏中。
 
@@ -107,9 +107,9 @@ Sometimes you might want to have icons for certain buttons to enhance the UX of 
 
 {{"demo": "pages/components/buttons/LoadingButtonsTransition.js"}}
 
-## Complex buttons
+## 组合按钮
 
-文本按钮，包含按钮，浮动操作按钮和图标按钮构建在同一组件之上：`ButtonBase`。 You can take advantage of this lower-level component to build custom interactions.
+文本按钮，包含按钮，浮动操作按钮和图标按钮构建在同一组件之上：`ButtonBase`。 你可以利用这种低级组件来构建自定义交互功能。
 
 {{"demo": "pages/components/buttons/ButtonBase.js"}}
 
