@@ -16,10 +16,10 @@
   },
   "classDescriptions": {
     "paper": {
-      "description": "Styles applied to the `Paper` component."
+      "description": "Styles applied to the Paper component."
     },
     "list": {
-      "description": "Styles applied to the `List` component via `MenuList`."
+      "description": "Styles applied to the List component via `MenuList`."
     }
   }
 }
