@@ -30,7 +30,7 @@
       "description": "Styles applied to the spacer element."
     },
     "caption": {
-      "description": "Styles applied to the caption Typography components if {{conditions}}.",
+      "description": "Styles applied to the caption Typography component if {{conditions}}.",
       "conditions": "<code>variant=\"caption\"</code>"
     },
     "selectRoot": {
@@ -43,7 +43,7 @@
       "description": "Styles applied to the Select component `icon` class."
     },
     "input": {
-      "description": "Styles applied to the `InputBase` component."
+      "description": "Styles applied to the InputBase component."
     },
     "menuItem": {
       "description": "Styles applied to the MenuItem component."
