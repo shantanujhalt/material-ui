@@ -3,7 +3,7 @@
   "propDescriptions": {
     "children": "The content of the component.",
     "classes": "Override or extend the styles applied to the component. See <a href=\"#css\">CSS API</a> below for more details.",
-    "direction": "Which direction should the button indicate?",
+    "direction": "The direction the button should indicate.",
     "disabled": "如果被设置为 <code>true</code>，那么该组件将会被禁用。",
     "orientation": "The group orientation (layout flow direction)."
   },
