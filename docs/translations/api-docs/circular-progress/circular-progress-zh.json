@@ -30,7 +30,7 @@
       "conditions": "<code>color=\"secondary\"</code>"
     },
     "svg": {
-      "description": "Styles applied to the `svg` element."
+      "description": "Styles applied to the svg element."
     },
     "circle": {
       "description": "Styles applied to the `circle` svg path."
