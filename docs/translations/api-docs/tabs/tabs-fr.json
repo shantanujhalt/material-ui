@@ -61,14 +61,14 @@
       "conditions": "<code>variant=\"scrollable\"</code> and <code>visibleScrollbar={false}</code>"
     },
     "scrollButtons": {
-      "description": "Styles applied to the `ScrollButtonComponent` component."
+      "description": "Styles applied to the ScrollButtonComponent component."
     },
     "scrollButtonsHideMobile": {
-      "description": "Styles applied to the `ScrollButtonComponent` component if {{conditions}}.",
+      "description": "Styles applied to the ScrollButtonComponent component if {{conditions}}.",
       "conditions": "<code>allowScrollButtonsMobile={true}</code>"
     },
     "indicator": {
-      "description": "Styles applied to the `TabIndicator` component."
+      "description": "Styles applied to the TabIndicator component."
     }
   }
 }
