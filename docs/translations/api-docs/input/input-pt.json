@@ -55,7 +55,7 @@
       "conditions": "<code>error={true}</code>"
     },
     "sizeSmall": {
-      "description": "Styles applied to the `input` element if {{conditions}}.",
+      "description": "Styles applied to the input element if {{conditions}}.",
       "conditions": "<code>size=\"small\"</code>"
     },
     "multiline": {
@@ -67,18 +67,18 @@
       "conditions": "<code>fullWidth={true}</code>"
     },
     "input": {
-      "description": "Styles applied to the `input` element."
+      "description": "Styles applied to the input element."
     },
     "inputSizeSmall": {
-      "description": "Styles applied to the `input` element if {{conditions}}.",
+      "description": "Styles applied to the input element if {{conditions}}.",
       "conditions": "<code>size=\"small\"</code>"
     },
     "inputMultiline": {
-      "description": "Styles applied to the `input` element if {{conditions}}.",
+      "description": "Styles applied to the input element if {{conditions}}.",
       "conditions": "<code>multiline={true}</code>"
     },
     "inputTypeSearch": {
-      "description": "Styles applied to the `input` element if {{conditions}}.",
+      "description": "Styles applied to the input element if {{conditions}}.",
       "conditions": "<code>type=\"search\"</code>"
     }
   }
