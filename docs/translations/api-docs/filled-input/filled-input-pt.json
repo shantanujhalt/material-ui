@@ -60,7 +60,7 @@
       "conditions": "<code>error={true}</code>"
     },
     "sizeSmall": {
-      "description": "Styles applied to the `input` element if {{conditions}}.",
+      "description": "Styles applied to the input element if {{conditions}}.",
       "conditions": "<code>size=\"small\"</code>"
     },
     "multiline": {
@@ -72,25 +72,25 @@
       "conditions": "<code>hiddenLabel={true}</code>"
     },
     "input": {
-      "description": "Styles applied to the `input` element."
+      "description": "Styles applied to the input element."
     },
     "inputSizeSmall": {
-      "description": "Styles applied to the `input` element if {{conditions}}.",
+      "description": "Styles applied to the input element if {{conditions}}.",
       "conditions": "<code>size=\"small\"</code>"
     },
     "inputHiddenLabel": {
       "description": "Styles applied to the `input` if in `<FormControl hiddenLabel />`."
     },
     "inputMultiline": {
-      "description": "Styles applied to the `input` element if {{conditions}}.",
+      "description": "Styles applied to the input element if {{conditions}}.",
       "conditions": "<code>multiline={true}</code>"
     },
     "inputAdornedStart": {
-      "description": "Styles applied to the `input` element if {{conditions}}.",
+      "description": "Styles applied to the input element if {{conditions}}.",
       "conditions": "<code>startAdornment</code> is provided"
     },
     "inputAdornedEnd": {
-      "description": "Styles applied to the `input` element if {{conditions}}.",
+      "description": "Styles applied to the input element if {{conditions}}.",
       "conditions": "<code>endAdornment</code> is provided"
     }
   }
