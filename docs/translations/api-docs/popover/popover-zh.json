@@ -25,7 +25,7 @@
       "description": "Styles applied to the root element."
     },
     "paper": {
-      "description": "Styles applied to the `Paper` component."
+      "description": "Styles applied to the Paper component."
     }
   }
 }
