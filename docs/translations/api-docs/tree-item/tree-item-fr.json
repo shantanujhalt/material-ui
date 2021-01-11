@@ -21,7 +21,7 @@
       "description": "Styles applied to the root element."
     },
     "group": {
-      "description": "Styles applied to the `role=\"group\"` element."
+      "description": "Styles applied to the transition component."
     },
     "content": {
       "description": "Styles applied to the content element."
